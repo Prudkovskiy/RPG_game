@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="6" height="8" tilewidth="32" tileheight="32" nextobjectid="2">
+ <properties>
+  <property name="cam_pos_x" type="int" value="3"/>
+  <property name="cam_pos_y" type="int" value="3"/>
+  <property name="cam_size_x" type="int" value="5"/>
+  <property name="cam_size_y" type="int" value="6"/>
+  <property name="flag" type="bool" value="false"/>
+  <property name="layer_coll" type="int" value="5"/>
+  <property name="layer_player" type="int" value="4"/>
+  <property name="level" type="int" value="3"/>
+  <property name="start_x" type="int" value="96"/>
+  <property name="start_y" type="int" value="160"/>
+ </properties>
+ <tileset firstgid="1" source="TileSet/Tiles.tsx"/>
+ <tileset firstgid="2017" source="TileSet/Collision.tsx"/>
+ <layer name="Земля" width="6" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,75,75,75,75,75,
+0,75,75,75,75,75,
+0,75,75,75,75,75,
+0,75,75,75,75,75,
+0,75,75,75,75,75,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Трава" width="6" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,1502,0,0,0,0,
+0,1534,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Под игроком" width="6" height="8">
+  <data encoding="csv">
+0,1237,1237,1237,1237,1237,
+0,1269,1269,1269,1269,1269,
+0,0,0,0,0,1565,
+0,0,0,0,0,1340,
+0,1408,1620,0,0,1469,
+0,1469,0,0,0,1243,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Карта" width="6" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,1753,1754,1661,1369,1789,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,1695,0,0,0,1302,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Слой игрока" width="6" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Collision" width="6" height="8" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,
+2018,2018,2018,2018,2018,2018,
+2018,0,0,0,0,2018,
+2018,0,0,0,0,2018,
+2018,2018,2018,0,0,2018,
+2018,2018,0,0,0,2018,
+2018,2018,0,0,0,2018,
+2018,2018,2018,2018,2018,2018
+</data>
+ </layer>
+ <objectgroup name="Obj" visible="0">
+  <object id="1" type="Gate" x="64" y="192" width="96" height="32">
+   <properties>
+    <property name="path" value="Inn.tmx"/>
+    <property name="pos_x" type="int" value="416"/>
+    <property name="pos_y" type="int" value="576"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
