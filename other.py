@@ -66,12 +66,12 @@ class Message:
 
     def add(self, login: str, msg: str):
         """
-        Метод добавления соощения в класс
+        Метод добавления сообщения в класс
         :param login: логин пользователя
         :param msg: тест сообщения
         :return: None
         """
-        msg = textwrap.fill('{0}> {1}\n'.format(login, msg), self.wch)
+        msg = textwrap.fill('{0}: {1}\n'.format(login, msg), self.wch)
         lines = msg.split('\n')
         self.colors += [(Message.login_to_rgb(login))] * len(lines)
         self.strings += lines

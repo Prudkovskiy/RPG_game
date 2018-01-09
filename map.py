@@ -1,6 +1,6 @@
-from RPG import tiledtmxloader
-from RPG.life import *
-from RPG.other import *
+import tiledtmxloader
+from life import *
+from other import *
 
 __all__ = ['Map']
 

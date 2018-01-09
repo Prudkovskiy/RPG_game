@@ -1,20 +1,19 @@
-import pygame
-import socket
 import math
-import time
 import os
-import threading
 import random
+import socket
+import threading
+import time
 
-from RPG.other import *
-from RPG.life import *
-from RPG.map import *
-from RPG import sql
-
+import pygame
 from RPG.Battle.battle import *
-from RPG.Battle.classes import *
 
-from RPG.input_pygame import pygame_textinput
+from Battle.classes import *
+from RPG import sql
+from input_pygame import pygame_textinput
+from life import *
+from map import *
+from other import *
 
 
 class Game:

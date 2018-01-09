@@ -1,11 +1,12 @@
-import pygame
-import pyganim
 import logging
 import math
 import os
 
+import pygame
+import pyganim
+
 from RPG import sql
-from RPG.other import *
+from other import *
 
 __all__ = ['Life', 'Player', 'Friend',
            'SPECIAL_ID']

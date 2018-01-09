@@ -1,9 +1,11 @@
-import pygame
-from pygame import *
-import pyganim
-from RPG.Battle.classes import *
-from RPG.Battle.Runner_for_battle import *
 import random
+
+import pygame
+import pyganim
+from RPG.Battle.Runner_for_battle import *
+from pygame import *
+
+from Battle.classes import *
 
 __all__ = ['Bar','LocalUnit', 'Effect', 'BattleScene', 'move', 'vis_attack', 'vis_dead', 'vis_magic',
            'choice', 'animation', 'reset', 'update_bars', 'create_heroes', 'create_enemies', 'check_life', 'main_loop']
