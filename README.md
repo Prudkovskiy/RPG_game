@@ -1,7 +1,7 @@
 RPG-game
 ===
 
-![title](./RPG/IMG/About_game/1.JPG)
+![title](./IMG/About_game/1.JPG)
 
 **Игра в стиле RPG созданная на pygame**
 
@@ -9,33 +9,46 @@ RPG-game
 * Познакомиться с инструментами Python для создания игровых процессов
 * Разобраться с работой TCP/UDP – серверов
 * Написать многопользовательскую сетевую игру
-* Научиться разрабатывать продукт в команде
 
-## Распределение ролей
-|Денис | Николай | Дмитрий | Сергей |
-|---|---|---|---|
-|написание игрового цикла| написание TCP/UDP - серверов|визуальная составляющая битвы|сам механизм битвы|
-|дизайн|работа с БД|||
-|создание карт внешнего мира|логирование|||
+## Использовал
+* **pygame** - библиотека Python, предназначенный для написания компьютерных игр и мультимедиа-приложений.
 
-## Использовали
-* ![pygame](./RPG/IMG/About_game/pygame.JPG)
+  ![pygame](./IMG/About_game/pygame.JPG)
 
-* ![pyganim](./RPG/IMG/About_game/pyganim.JPG)
+* **pyganim** - для добавления анимаций в игру
+
+  ![pyganim](./IMG/About_game/pyganim.JPG)
 
 * **peewee** - orm для взаимодействия с БД
-![peewee](./RPG/IMG/About_game/peewee.JPG)
 
-* ![sql](./RPG/IMG/About_game/sql.JPG)
+  ![peewee](./IMG/About_game/peewee.JPG)
+
+* **sql** - СУБД для хранения информации об игроке
+
+  ![sql](./IMG/About_game/sql.JPG)
 
 ## Как это выглядит
-### регистрация
+### Меню:
+![menu](./IMG/About_game/Menu.png)
+### Создание персонажа:
+| персонаж  | повторное имя нельзя| рандомный персонаж  |
+|---|---|---|
+| ![pygame](./IMG/About_game/person1.jpg)  | ![pygame](./IMG/About_game/person2.jpg)  |  ![pygame](./IMG/About_game/person3.jpg) |
+### Мир:
+|таверна|город|внешний мир с драконами|
+|---|---|---|
+|![world1](./IMG/About_game/world1.png)|![world2](./IMG/About_game/world2.png)|![world3](./IMG/About_game/world3.png)|
+
+### Битва:
+![battle](./IMG/About_game/battle.jpg)
+
+P.S. чтобы встретить драконов, необходимо немного потусоваться на зеленой лужайке внешнего мира :)
 
 ## Инструкция
-Чтобы запустить игру, запустите Runner.py и выбирайте offline режим.
+Чтобы запустить игру, запустите server_TCP.py + server_UDP.py, а затем уже Runner.py и выбирайте offline режим.
 
 Если вы хотите запустить игру в сети, то запустите cервера server_TCP.py и
 server_UDP.py на своем хосте.
-
 Измените поле HOST в others.py на адрес вашего хоста.
+Также поменяйте порты в коде, на которых теперь крутятся эти два сервера.
 Затем уже запускайте Runner.py

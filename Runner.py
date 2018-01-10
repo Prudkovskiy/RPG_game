@@ -6,10 +6,10 @@ import threading
 import time
 
 import pygame
-from RPG.Battle.battle import *
-
+from Battle.battle import *
 from Battle.classes import *
-from RPG import sql
+
+import sql
 from input_pygame import pygame_textinput
 from life import *
 from map import *

@@ -5,7 +5,7 @@ import os
 import pygame
 import pyganim
 
-from RPG import sql
+import sql
 from other import *
 
 __all__ = ['Life', 'Player', 'Friend',
