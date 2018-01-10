@@ -1,8 +1,6 @@
 RPG-game
 ===
 
-![title](./IMG/About_game/title.png)
-
 **Игра в стиле RPG созданная на pygame**
 
 ## Цели проекта
