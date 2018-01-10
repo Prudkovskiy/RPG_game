@@ -2,7 +2,7 @@ import random
 
 import pygame
 import pyganim
-from RPG.Battle.Runner_for_battle import *
+from Battle.Runner_for_battle import *
 from pygame import *
 
 from Battle.classes import *
