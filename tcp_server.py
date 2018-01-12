@@ -13,12 +13,6 @@ db = MySQLDatabase("admin_test",
                    user="admin_test",
                    passwd="111111")
 
-# db = MySQLDatabase("rstabhuymg",
-#                    host="188.166.93.63",
-#                    port=8082,
-#                    user="rstabhuymg",
-#                    password="rq33hMdn5M")
-
 logger = logging.getLogger("tcp_server")
 logger.setLevel(logging.INFO)
 # create the logging file handler
@@ -32,7 +26,7 @@ class User(Model):
     user_login = TextField()
     class Meta:
         database = db
-# User.create_table()
+# User.create_table() // когда таблица в БД создается в первый раз
 
 class TCP:
     def __init__(self):
